@@ -731,8 +731,7 @@ public class DetailActivity extends BaseActivity {
         EventBus.getDefault().unregister(this);
     }
 
-    boolean PIP = Hawk.get(HawkConfig.PIC_IN_PIC, false);
-
+    
     @Override
     public void onUserLeaveHint() {
         // takagen99 : Additional check for external player
