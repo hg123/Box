@@ -266,21 +266,6 @@ public abstract class BaseActivity extends AppCompatActivity implements CustomAd
         getWindow().setAttributes(lparams);
     }
 
-    public void setScreenOn() {
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-    }
-
-    public void setScreenOff() {
-        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-    }
-
-    // takagen99: Added Theme Color
-    public int getThemeColor() {
-        TypedArray a = mContext.obtainStyledAttributes(R.styleable.themeColor);
-        int themeColor = a.getColor(R.styleable.themeColor_color_theme, 0);
-        return themeColor;
-    }
-
     protected static BitmapDrawable globalWp = null;
 
     public void changeWallpaper(boolean force) {
