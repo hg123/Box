@@ -384,8 +384,8 @@ public class DriveActivity extends BaseActivity {
         delMode = !delMode;
         if (delMode) {
             // takagen99: Added Theme Color
-//            this.btnRemoveServer.setColorFilter(ContextCompat.getColor(mContext, R.color.color_theme));
-            this.btnRemoveServer.setColorFilter(getThemeColor());
+            this.btnRemoveServer.setColorFilter(ContextCompat.getColor(mContext, R.color.color_theme));
+  //          this.btnRemoveServer.setColorFilter(getThemeColor());
         } else {
             this.btnRemoveServer.setColorFilter(ContextCompat.getColor(mContext, R.color.color_FFFFFF));
         }
